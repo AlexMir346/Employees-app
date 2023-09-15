@@ -5,11 +5,27 @@
   border-radius: 4px;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
   color: #fff;
+
+  @media (max-width: 768px) {
+    padding: 15px;
+  }
 }
+
 .add-form {
   margin-top: 20px;
+
   input {
     width: 350px;
     margin-right: 20px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; // Изменяем направление расположения полей и кнопки на мобильных устройствах
   }
 }

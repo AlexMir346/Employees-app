@@ -1,6 +1,6 @@
 .list-group-item {
   padding: 15px 20px;
-  border-bottom: 1px solid #3d5a80;
+  border-bottom: 1px solid #1654a5;
 }
 
 .list-group-item:last-child {
@@ -46,20 +46,30 @@
   font-size: 16px;
   color: #ffd700;
   transition: 0.3s all;
-  transform: translateX(30px);
   opacity: 0;
 }
 
 .list-group-item.like .fa-star {
   opacity: 1;
-  transform: translateX(0px);
 }
 
-.list-group-item.increase .list-group-item-label,
-.list-group-item.increase .list-group-item-input {
-  color: #e09f3e;
-}
+@media (max-width: 768px) {
+  .list-group-item {
+    padding: 10px 15px;
+  }
 
-.list-group-item.increase .btn-star {
-  color: #aeaeae;
+  .list-group-item span {
+    font-size: 16px;
+    min-width: auto;
+  }
+
+  .list-group-item input {
+    font-size: 16px;
+  }
+
+  .list-group-item button {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
 }
